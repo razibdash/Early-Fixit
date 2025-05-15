@@ -9,8 +9,8 @@ import {
 import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="max-w-screen-2xl container bg-white-800 shadow-md">
-      <nav className="container border-b-amber-100 flex justify-between items-center p-4 mx-auto text-stone-800">
+    <div className="max-w-screen-2xl h-16 mx-auto  bg-white-800 shadow-md">
+      {/* <nav className=" border-b-amber-100 flex justify-between items-center p-4 mx-auto text-stone-800">
         <div className="flex justify-between items-center gap-4">
           <div className="flex items-center gap-1 ">
             <CiLocationOn />
@@ -28,8 +28,9 @@ function Navbar() {
           <CiTwitter />
           <CiInstagram />
         </div>
-      </nav>
-      <header className="bg-white shadow-sm sticky top-0 z-10">
+      </nav> */}
+
+      <header className="bg-white  sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo/Brand */}
@@ -57,10 +58,10 @@ function Navbar() {
                 services
               </NavLink>
               <NavLink
-                to="/pricing"
+                to="/staff"
                 className="text-gray-700 hover:text-stone-600 transition-colors"
               >
-                Pricing
+                Staff
               </NavLink>
               <NavLink
                 to="/about"
@@ -91,18 +92,12 @@ function Navbar() {
 
             {/* Call to action buttons - hidden on mobile */}
             <div className="hidden md:flex items-center space-x-4">
-              <a
+              <NavLink
                 href="#"
                 className="text-gray-700 hover:text-stone-600 transition-colors"
               >
                 Login
-              </a>
-              <a
-                href="#"
-                className="text-stone-600 px-4 py-2 rounded-md hover:bg-stone-700 hover:text-white transition-colors"
-              >
-                Sign Up
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
