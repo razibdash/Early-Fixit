@@ -6,9 +6,8 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-200  h-full ">
-        <SliderHero />
-      </div>
+      {/* Hero Slider */}
+      <SliderHero />
 
       <div className="container mx-auto p-4">
         <h1 className="text-2xl font-bold">Welcome to the Home Page</h1>

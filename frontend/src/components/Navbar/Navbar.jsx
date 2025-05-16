@@ -9,8 +9,8 @@ import {
 import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="max-w-screen-2xl container  sticky top-0 z-10 h-16 mx-auto  bg-white-800 shadow-md">
-      <header className="bg-white ">
+    <div className="max-w-screen-2xl container sticky top-0 z-10 h-16   bg-white-800 shadow-md">
+      <header className="bg-white mx-w-screen-2xl shadow-md">
         <div className=" mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo/Brand */}
