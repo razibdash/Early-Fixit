@@ -9,29 +9,9 @@ import {
 import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="max-w-screen-2xl h-16 mx-auto  bg-white-800 shadow-md">
-      {/* <nav className=" border-b-amber-100 flex justify-between items-center p-4 mx-auto text-stone-800">
-        <div className="flex justify-between items-center gap-4">
-          <div className="flex items-center gap-1 ">
-            <CiLocationOn />
-            <p className="text-sm text-gray-500">123 Main St, City, Country</p>
-          </div>
-
-          <div className="flex items-center gap-1">
-            <CiMail />
-            <p className="text-sm text-gray-500">info@example.com</p>
-          </div>
-        </div>
-
-        <div className="flex justify-between items-center gap-4">
-          <CiFacebook />
-          <CiTwitter />
-          <CiInstagram />
-        </div>
-      </nav> */}
-
-      <header className="bg-white  sticky top-0 z-10">
-        <div className="container mx-auto px-4 py-4">
+    <div className="max-w-screen-2xl container  sticky top-0 z-10 h-16 mx-auto  bg-white-800 shadow-md">
+      <header className="bg-white ">
+        <div className=" mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo/Brand */}
             <div className="flex items-center">
@@ -47,25 +27,41 @@ function Navbar() {
             <nav className="hidden md:flex space-x-8">
               <NavLink
                 to="/"
-                className="text-gray-700 hover:text-stone-600 transition-colors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
+                    : "text-gray-700 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                }
               >
                 Home
               </NavLink>
               <NavLink
                 to="/services"
-                className="text-gray-700 hover:text-stone-600 transition-colors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
+                    : "text-gray-700 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                }
               >
-                services
+                Services
               </NavLink>
               <NavLink
                 to="/staff"
-                className="text-gray-700 hover:text-stone-600 transition-colors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
+                    : "text-gray-800 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                }
               >
-                Staff
+                Staffs
               </NavLink>
               <NavLink
                 to="/about"
-                className="text-gray-700 hover:text-stone-600 transition-colors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
+                    : "text-gray-700 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                }
               >
                 About
               </NavLink>
@@ -93,7 +89,7 @@ function Navbar() {
             {/* Call to action buttons - hidden on mobile */}
             <div className="hidden md:flex items-center space-x-4">
               <NavLink
-                href="#"
+                to={"/login"}
                 className="text-gray-700 hover:text-stone-600 transition-colors"
               >
                 Login
