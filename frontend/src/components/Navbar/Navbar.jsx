@@ -17,7 +17,7 @@ function Navbar() {
             <div className="flex items-center">
               <NavLink
                 to="/"
-                className="text-xl font-serif font-bold text-stone-600"
+                className="text-xl font-extrabold font-sans text-amber-500"
               >
                 Early FixIt
               </NavLink>
@@ -29,8 +29,8 @@ function Navbar() {
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
-                    : "text-gray-700 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                    ? "text-amber-500 py-1 px-5 font-bold border-b-amber-500  border-b-2"
+                    : "text-gray-700 py-1 px-5 hover:border-b-amber-500 hover:border-b-2 transition-all"
                 }
               >
                 Home
@@ -39,8 +39,8 @@ function Navbar() {
                 to="/services"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
-                    : "text-gray-700 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                    ? "text-amber-500 py-1 px-5 font-bold border-b-amber-500  border-b-2"
+                    : "text-stone-700 py-1 px-5 hover:border-b-amber-500 hover:border-b-2 transition-all"
                 }
               >
                 Services
@@ -49,8 +49,8 @@ function Navbar() {
                 to="/staff"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
-                    : "text-gray-800 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                    ? "text-amber-500 py-1 px-5 font-bold border-b-amber-500  border-b-2"
+                    : "text-gray-800 py-1 px-5 hover:border-b-amber-500 hover:border-b-2 transition-all"
                 }
               >
                 Staffs
@@ -59,8 +59,8 @@ function Navbar() {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-stone-800 py-1 px-5 font-bold border-b-blue-800  border-b-2"
-                    : "text-gray-700 py-1 px-5 hover:border-b-blue-800 hover:border-b-2 transition-all"
+                    ? "text-amber-500 py-1 px-5 font-bold border-b-amber-500  border-b-2"
+                    : "text-gray-700 py-1 px-5 hover:border-b-amber-500 hover:border-b-2 transition-all"
                 }
               >
                 About
@@ -90,7 +90,7 @@ function Navbar() {
             <div className="hidden md:flex items-center space-x-4">
               <NavLink
                 to={"/login"}
-                className="text-gray-700 hover:text-stone-600 transition-colors"
+                className="text-stone-100 px-3 py-2 rounded-lg  bg-amber-500  hover:text-stone-50 hover:font-bold transition-colors"
               >
                 Login
               </NavLink>
